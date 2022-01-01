@@ -9,14 +9,18 @@ function App() {
 
   const game = new Game(target, targetWord, result);
 
-  const targetPosition = parseInt(Math.random() * 100);
-  const gameList = new Array(100).fill("tmp");
-  gameList.fill(defaultWord, 0, targetPosition);
-  gameList.fill(targetWord, targetPosition, targetPosition + 1);
-  gameList.fill(defaultWord, targetPosition + 1, 100);
-
   //Game Setting!
-  game.setState(gameList);
+  const setting = () => {
+    const number = window.innerWidth < 768 ? 50 : 100;
+    const targetPosition = parseInt(Math.random() * number);
+    const gameList = new Array(number).fill("tmp");
+    gameList.fill(defaultWord, 0, targetPosition);
+    gameList.fill(targetWord, targetPosition, targetPosition + 1);
+    gameList.fill(defaultWord, targetPosition + 1, number);
+    game.setState(gameList);
+  };
+
+  setting();
 }
 
 export default App;
