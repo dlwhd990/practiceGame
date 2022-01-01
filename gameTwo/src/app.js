@@ -15,7 +15,7 @@ function App() {
   gameList.fill(targetWord, targetPosition, targetPosition + 1);
   gameList.fill(defaultWord, targetPosition + 1, 100);
 
-  //Game Setting
+  //Game Setting!
   game.setState(gameList);
 }
 
