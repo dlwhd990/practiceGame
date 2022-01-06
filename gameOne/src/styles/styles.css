@@ -51,7 +51,21 @@ body {
 .result {
   font-size: 2rem;
   font-weight: 700;
-  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  color: white;
+}
+
+.result.on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,6 +15,7 @@ function App() {
   }, [100]);
 
   const gameJudge = (button) => {
+    result.classList.add("on");
     const enemyItem = target.innerText;
     const myItem = button.innerText;
     if (enemyItem === myItem) {
