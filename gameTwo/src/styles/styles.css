@@ -19,6 +19,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.desc {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
 .item {
   width: 30px;
   height: 30px;

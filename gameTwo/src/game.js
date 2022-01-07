@@ -1,4 +1,4 @@
-function Game(target, targetWord, result) {
+function Game(target, targetWord, result, desc) {
   this.state;
   this.setState = (nextState) => {
     this.state = nextState;
@@ -6,6 +6,7 @@ function Game(target, targetWord, result) {
   };
 
   this.render = () => {
+    desc.innerHTML = `정답: ${targetWord}`;
     target.innerHTML = this.state
       .map(
         (item) => `

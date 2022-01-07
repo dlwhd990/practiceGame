@@ -3,11 +3,12 @@ import Game from "./game.js";
 function App() {
   const target = document.querySelector(".main");
   const result = document.querySelector(".result");
+  const desc = document.querySelector(".desc");
 
   const defaultWord = "멵";
   const targetWord = "먽";
 
-  const game = new Game(target, targetWord, result);
+  const game = new Game(target, targetWord, result, desc);
 
   //Game Setting!
   const setting = () => {
