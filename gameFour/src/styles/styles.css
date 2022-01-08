@@ -21,4 +21,18 @@ body {
   height: 9.6vw;
   margin: 0.66%;
   border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.item.on {
+  animation: appear 2s;
+}
+
+@keyframes appear {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: white;
+  }
 }
