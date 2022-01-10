@@ -35,7 +35,9 @@ function Game(target) {
 
   this.setState = (nextState) => {
     this.state = nextState;
-    this.setGoalState(this.state.order.slice(0, this.state.turn + 2));
+    if (this.state.clicked.length === 0) {
+      this.setGoalState(this.state.order.slice(0, this.state.turn));
+    }
     console.log(this.goalState);
   };
 }

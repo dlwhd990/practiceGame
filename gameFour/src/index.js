@@ -12,4 +12,5 @@ order.sort(function () {
 app.setState({
   order,
   turn: 1,
+  clicked: [],
 });
